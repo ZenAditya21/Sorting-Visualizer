@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: hsla(210, 17%, 98%, 0.729); /* Light gray background */
+        }
+        #bars-container {
+            display: flex;
+            align-items: flex-end;
+            height: 400px; /* Adjust height as needed */
+            padding: 20px;
+        }
+        .bar {
+            width: 8px; /* Adjust width as needed */
+            margin: 0 1px;
+            background-color: #007bff; /* Default color */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Sorting Visualizer</span>
+        <div id="buttons">
+          <button class="btn btn-light" id="generateArrayBtn">Generate New Array</button>
+            <button class="btn btn-light" id="bubbleSortBtn">Bubble Sort</button>
+            <button class="btn btn-light" id="selectionSortBtn">Selection Sort</button>
+            <button class="btn btn-light" id="insertionSortBtn">Insertion Sort</button>
+            <button class="btn btn-light" id="quickSortBtn">Quick Sort</button>
+            <button class="btn btn-light" id="mergeSortBtn">Merge Sort</button>
+          
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+        
+          <div id="buttons">
+              <!-- Sorting algorithm buttons -->
+          </div>
+          <div>
+              <span>
+                  <!-- Number of bars input -->
+                  <label for="Bars">Bars:</label>
+                  <input id="arr_sz" type="" min="20" max="120" step="1" value="60">
+              </span>
+              <span>
+                  <!-- Speed control input -->
+                  <label for="speed">Speed:</label>
+                  <input id="speed" type="" min="1" max="100" value="50">
+              </span>
+          </div>
+      </nav>
+      
+    </nav>
+
+    <div id="bars-container"></div>
+
+    <script src="main.js"></script>
+    <script src="Quicksort.js"></script>
+    <script src="SelectionSort.js"></script>
+    <script src="Bubblesort.js"></script>
+    <script src="MergeSort.js"></script>
+    <script src="Insertionsort.js"></script>
+</body>
+</html>
